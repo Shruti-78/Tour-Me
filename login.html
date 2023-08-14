@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="static/style2.css">
+    <style>
+        body {
+  background-image: url("static/buitin/login.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+}
+img {
+  opacity: 0.3;
+}
+    </style>
+</head>
+<body>
+<form method="POST" style="font-size: 40px;"><h1>LOG IN</h1><br><br>
+  <h3style="font-size: 30px;">Customer_ID: <input style="font-size: 30px;" type = "text" name = "custid"></h3><br><br><br><br><br><br>
+
+  <a href="{{ url_for('location') }}" method="GET" >
+  <button style="font-size: 25px; width = 350px;" type="submit" class="button">Enter</button>
+  </a>
+
+    <a href="{{ url_for('home') }}" method="GET" >
+  <button style="font-size: 25px; width = 350px;" type="submit" class="button">HOME</button>
+  </a>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 ERROR</title>
+    <style>
+        body {
+   display: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.button-container {
+        text-align: center;
+
+      }
+      .button{
+      text-align: center;
+            padding: 10px 20px;
+    /*background-color: #337ab7;*/
+    background-color:#263697;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width:130px;
+    align:center;
+      }
+    </style>
+</head>
+<body>
+<p><br><br><br><br><br>
+<h1 >COULDN'T BOOK YOUR TRIP!</h1></p><br>
+<h2 >Please try again...</h2><br><br><br>
+<div class="button-container">
+<a href="{{ url_for('location') }}" method="GET" >
+    <button type="submit" class="button">OK</button>
+</a></div>
+
+</body>
+</html>

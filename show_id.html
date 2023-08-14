@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Id</title>
+    <link rel="stylesheet" href="static/style2.css">
+</head>
+<body style="background-color:#BAAAF8;">
+<br><br><br><br>
+<h1 style="font-size: 40px;">YOUR CUSTOMER ID: {{result}}</h1><br><br><br><br><br>
+    <p  class="center" style="font-size: 30px;">Please remember for future use...</p>
+    <p  class="center" style="font-size: 30px;">You have successfully logged in!</p><br><br><br>
+
+<a href="{{ url_for('location') }}" method="GET" >
+    <button type="submit" class="button">OK</button>
+
+
+</a>
+</body>
+</html>

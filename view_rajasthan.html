@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites in Rajasthan</title>
+    <link rel="stylesheet" href="static/style3.css">
+    <style>
+        body {
+            background-color: #d7d8ff;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .resized-image {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .site-name {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sites in Rajasthan</h1>
+
+    {% for user in result %}
+    <div>
+        <p class="site-name">{{ user[0] }}</p>
+    </div>
+    {% endfor %}
+
+    <div class="image-container">
+        <img class="resized-image" src="static/buitin/raj1.jpg" alt="Image">
+        <img class="resized-image" src="static/buitin/raj2.jpg" alt="Image">
+        <img class="resized-image" src="static/buitin/raj3.jpg" alt="Image">
+        <img class="resized-image" src="static/buitin/raj4.jpg" alt="Image">
+    </div>
+</body>
+</html>

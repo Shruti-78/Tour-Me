@@ -1,0 +1,21 @@
+body {
+    display: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.button-container {
+        text-align: center;
+
+      }
+      .button {
+    padding: 10px 20px;
+    /*background-color: #337ab7;*/
+    background-color:#263697;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width:160px;
+    align:center;
+}

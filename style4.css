@@ -1,0 +1,52 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #d7d8ff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 1.875em;
+            text-align: center;
+        }
+
+        div {
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: #263697;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 240px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .back-button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: #263697;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 120px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }

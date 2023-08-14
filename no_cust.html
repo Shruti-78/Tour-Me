@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOT FOUND</title>
+    <link rel="stylesheet" href="static/style2.css">
+    <style>
+        body {
+            background-image: url("static/buitin/error.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        img {
+            opacity: 0;
+        }
+        h1 {
+            color: #cc0000;
+            font-size: 50px;
+        }
+        h2 {
+            color: #cc0000;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <p><br><br><br><br>
+        <h1>YOUR ACCOUNT WAS NOT FOUND!</h1><br><br><br><br>
+        <h2>Please SIGN UP first...</h2><br><br><br>
+        <a style="align: left" href="{{ url_for('home') }}" method="GET" >
+            <button style="font-size: 23px;" type="submit" class="button">HOME</button>
+        </a>
+    </p>
+</body>
+</html>

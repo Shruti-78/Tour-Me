@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEST BENGAL</title>
+<link rel="stylesheet" href="static/style4.css">
+</head>
+
+<body>
+    <h1>WEST BENGAL PACKAGES</h1>
+
+    <form action="{{ url_for('view_bengal') }}" method="GET">
+        <button type="submit" class="button">VIEW SITES IN WEST BENGAL</button>
+    </form><br><br>
+
+    <h2>PACKAGE_ID&emsp;&emsp; NUMBER OF MEMBERS&emsp;&emsp; PACKAGE TYPE&emsp;&emsp; TOTAL_COST</h2>
+
+    {% for user in result %}
+    <div>
+        <br>
+        <td>&emsp;&emsp;&emsp;&emsp;{{user[0]}}&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+        <td>&emsp;&emsp;&emsp;&emsp;&emsp;{{user[1]}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{{user[2]}}&ensp;&emsp;&emsp;&emsp;&emsp;</td>
+        <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{{user[4]}}&emsp;&emsp;&emsp;&emsp;&emsp;</td>
+    </div>
+    {% endfor %}
+
+    <form action="{{ url_for('book_now') }}" method="GET">
+        <button type="submit" class="button">BOOK YOUR TRIP NOW</button>
+    </form>
+
+    <form action="{{ url_for('location') }}" method="GET">
+        <button type="submit" class="back-button">BACK</button>
+    </form>
+</body>
+
+</html>

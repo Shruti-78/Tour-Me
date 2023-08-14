@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOT FOUND</title>
+<!--    <link rel="stylesheet" href="static/style.css">-->
+    <style>
+        body {
+   display: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("static/buitin/error1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+}
+img {
+  opacity: 0;
+}
+
+.button-container {
+        text-align: bottom;
+
+      }
+      .button{
+      text-align: center;
+            padding: 10px 20px;
+    /*background-color: #337ab7;*/
+    background-color:#263697;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width:130px;
+    align:left;
+      }
+
+    </style>
+</head>
+<body>
+<br><br>
+<div class="button-container">
+<a style="align: left" href="{{ url_for('home') }}" method="GET" >
+    <button style="font-size: 23px;" type="submit" class="button">HOME</button>
+</a></div>
+<p>
+<h1 style="font-size: 40px;">YOU COULD NOT SIGN UP!</h1></p><br><br><br>
+<!--<h2 >Please SIGN UP first...</h2><br><br><br>-->
+
+
+</body>
+</html>

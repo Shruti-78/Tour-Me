@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites in haridwar</title>
+    <link rel="stylesheet" href="static/style3.css">
+</head>
+
+
+<body>
+    <h1>Sites in Haridwar</h1>
+
+    <div class="table-row">
+        {% for user in result %}
+        <td>{{ user[0] }}</td>
+        {% endfor %}
+    </div>
+
+    <div class="image-container">
+<img class="resized-image" src="static/buitin/haridwar1.jpg" alt="Image">
+<img class="resized-image" src="static/buitin/haridwar2.jpg" alt="Image">
+<img class="resized-image" src="static/buitin/haridwar3.jpg" alt="Image">
+<img class="resized-image" src="static/buitin/haridwar4.jpg" alt="Image">
+           </div>
+
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

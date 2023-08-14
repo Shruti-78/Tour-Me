@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+   <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+<div class="container" >
+    <img class="image" src = "{{ url_for('static', filename='buitin/wall.png') }}">
+    <div class="text-overlay">
+        <h1 style="display: center; text-align:center;text-colour:black ;font-size: 55px;">WELCOME TO TOUR ME</h1>
+        <div class="buttons" >
+
+            <header>
+                <nav>
+                    <a href="{{ url_for('button_click') }}" method="GET" >
+                        <button style="font-size: 20px;" type="submit" class="button" >SIGN UP</button>
+                    </a>
+                    <a href="{{ url_for('login') }}" method="GET" >
+                        <button style="font-size: 20px;" type="submit" class="button">LOG IN</button>
+                    </a>
+                </nav>
+            </header>
+        <!--<div id = "image" style = "background:url(/static/buitin/wall.jpg) center / cover no-repeat;">-->
+        <!--</div>-->
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
